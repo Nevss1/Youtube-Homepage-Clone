@@ -4,7 +4,7 @@
     bottom: 0;
     top: 55px;
     background-color: white;
-    width: 80px;
+    width: 72px;
     padding-top: 5px;
     z-index: 200;
 }
@@ -20,9 +20,9 @@
     font-family: Roboto, Arial;
 }
 .sidebar-link:hover{
-    background-color: rgb(129, 129, 129);
+    background-color: rgb(235, 235, 235);
 }
 .sidebar-link img{
     height: 24px;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
 }

@@ -3,6 +3,7 @@
 }
 .thumbnail-row{
     position: relative;
+    margin-bottom: 8px;
 }
 .video-time{
     background-color: rgba(0, 0, 0, 0.9);
@@ -21,7 +22,7 @@
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
 }
 .video-author,
 .video-stats{
@@ -33,15 +34,17 @@
 }
 .video-grid{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 16px;
-    row-gap: 40px;
+    row-gap: 16px;
+    column-gap: 8px;
+    padding: 20px;
 }
 .video-info-grid{
     display: grid;
     grid-template-columns: 50px 1fr;
 }
 .profile-picture{
-    width: 80%;
+    width: 70%;
     border-radius: 30px;
 }

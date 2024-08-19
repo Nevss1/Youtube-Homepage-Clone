@@ -20,23 +20,44 @@
             </div>
             <div class="middle-section">
                 <input class="bar-search" type="text" placeholder="Search">
-                <button class="search-button">
-                    <img class="search-img" src="icons/search.svg">
-                </button>
-                <button class="voice-button">
-                    <img class="voice-img" src="icons/voice-search-icon.svg">
-                </button>
+
+                <div class="tooltip-container">
+                    <button class="search-button">
+                        <img class="search-img" src="icons/search.svg">
+                    </button>
+                    <div class="tooltip">Search</div>
+                </div>
+                
+                <div class="tooltip-container">
+                    <button class="voice-button">
+                        <img class="voice-img" src="icons/voice-search-icon.svg">
+                    </button>
+                    <div class="tooltip">Search with your voice</div>
+                </div>
+                
             </div>
             <div class="right-section">
-                <img class="create-icon" src="icons/upload.svg">
-                <img class="yt-apps-icon" src="icons/youtube-apps.svg">
+                <div class="tooltip-container">
+                    <img class="create-icon" src="icons/upload.svg">
+                    <div class="tooltip">Create</div>
+                </div>
+                
+                <div class="tooltip-container">
+                    <img class="yt-apps-icon" src="icons/youtube-apps.svg">
+                    <div class="tooltip">Youtube Apps</div>
+                </div>
+                
+
                 <div class="tooltip-container">
                     <img class="notification-icon" src="icons/notifications.svg">
                     <div class="notification-count">
                         3
                     </div>
+                    <div class="tooltip">Notifications</div>
                 </div>
-                <img class="current-user-picture" src="yt_images/my-channel.jpeg">
+                <div class="tooltip-container">
+                    <img class="current-user-picture" src="yt_images/my-channel.jpeg">
+                </div>
             </div>
         </div>
 
@@ -70,7 +91,6 @@
         <div class="video-grid">
             <div class="video-preview">
                 <div class="thumbnail-row">
-
                     <img class="thumbnail" src="yt_images/hogwarts1.webp">
                     <div class="video-time">
                         3:00:01
@@ -141,7 +161,7 @@
             </div>
             
             <div class="video-preview">
-                <div>
+                <div class="thumbnail-row">
                     <img class="thumbnail" src="yt_images/reinodoceu.jpg">
                     <div class="video-time">21:16</div>
                 </div>
@@ -164,7 +184,7 @@
             </div>
 
             <div class="video-preview">
-                <div>
+                <div class="thumbnail-row">
                     <img class="thumbnail" src="yt_images/alanzoka.webp">
                     <div class="video-time">2:28:25</div>
                 </div>
@@ -187,7 +207,7 @@
             </div>
 
             <div class="video-preview">
-                <div>
+                <div class="thumbnail-row">
                     <img class="thumbnail" src="yt_images/goulart.webp">
                     <div class="video-time">17:23</div>
                 </div>

@@ -50,12 +50,38 @@
     font-family: Roboto, Arial;
     color: #8d8d8d;
 }
-.search-button{
+.tooltip-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
     height: 40px;
+}
+.tooltip-container .tooltip{
+    position: absolute;
+    background-color: rgba(96, 96, 96, 0.9);
+    color: white;
+    padding: 8px 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -38px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+    font-family: Roboto, Arial;
+}
+.tooltip-container:hover .tooltip{
+    opacity: 1;
+}
+.search-button{
     width: 64px;
+    height: 40px;
     background-color: #f7f7f7;
     border: 1px solid #cccccc;
     margin-left: -1px;
+    cursor: pointer;
 }
 .search-img{
     width: 24px;
@@ -67,7 +93,7 @@
     margin-left: 5px;
     cursor: pointer;
     background-color: #f8f8f8;
-    border-radius: 20px
+    border-radius: 20px;
 }
 .voice-img{
     width: 24px;
@@ -111,9 +137,4 @@
     border-radius: 16px;
     object-fit: cover;
     cursor: pointer;
-}
-.tooltip-container{
-    position: relative;
-    display: flex;
-    justify-content: center;
 }
