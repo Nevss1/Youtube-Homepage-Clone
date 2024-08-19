@@ -9,6 +9,7 @@
     top: 0;
     left: 0;
     right: 0;
+    z-index: 100;
 }
 .left-section{
     height: inherit;
@@ -92,10 +93,27 @@
     height: 24px;
     cursor: pointer;
 }
+.notification-count{
+    position: absolute;
+    background-color: rgb(212, 0, 0);
+    color: white;
+    font-family: Roboto, Arial;
+    font-size: 10px;
+    top: -3px;
+    right: -7px;
+    border-radius: 100px;
+    padding: 2px 5px;
+    border: 2px solid white;
+}
 .current-user-picture{
     height: 32px;
     width: 32px;
     border-radius: 16px;
     object-fit: cover;
     cursor: pointer;
+}
+.tooltip-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
 }
