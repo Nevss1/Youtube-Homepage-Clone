@@ -34,17 +34,45 @@
 }
 .video-grid{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 16px;
     row-gap: 16px;
     column-gap: 8px;
     padding: 20px;
 }
+@media (max-width: 800px) {
+    .video-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (min-width: 1200px) {
+    .video-grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
 .video-info-grid{
     display: grid;
     grid-template-columns: 50px 1fr;
 }
-.profile-picture{
+.profile-container{
+    position: relative;
     width: 70%;
+}
+.profile-picture{
+    width: 100%;
     border-radius: 30px;
+    cursor: pointer;
+}
+.profile-container .profile-info{
+    position: absolute;
+    background-color: black;
+    color: white;
+    border-radius: 3px;
+    opacity: 1;
+    padding: 20px 50px;
+    pointer-events: none;
+    white-space: nowrap;
+}
+.profile-container:hover .profile-info{
+    opacity: 1;
 }
