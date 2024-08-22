@@ -1,10 +1,14 @@
 .thumbnail{
     width: 100%;
+    border-radius: 8px;
 }
 .thumbnail-row{
     position: relative;
+    width: 100%;
     margin-bottom: 8px;
+    cursor: pointer;
 }
+
 .video-time{
     background-color: rgba(0, 0, 0, 0.9);
     color: white;
@@ -19,15 +23,18 @@
 }
 .videotitle{
     margin-top: 0;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
     line-height: 20px;
     margin-bottom: 8px;
+    color: white;
+    cursor: pointer;
 }
 .video-author,
 .video-stats{
     font-size: 12px;
-    color: rgb(96, 96, 96);
+    color: rgb(167, 167, 167);
+    cursor: pointer;
 }
 .video-author{
     margin-bottom: 4px;
@@ -45,34 +52,17 @@
         grid-template-columns: 1fr 1fr;
     }
 }
-@media (min-width: 1200px) {
-    .video-grid{
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-}
 .video-info-grid{
     display: grid;
     grid-template-columns: 50px 1fr;
 }
 .profile-container{
     position: relative;
+    color: white;
     width: 70%;
 }
 .profile-picture{
     width: 100%;
     border-radius: 30px;
     cursor: pointer;
-}
-.profile-container .profile-info{
-    position: absolute;
-    background-color: black;
-    color: white;
-    border-radius: 3px;
-    opacity: 1;
-    padding: 20px 50px;
-    pointer-events: none;
-    white-space: nowrap;
-}
-.profile-container:hover .profile-info{
-    opacity: 1;
 }

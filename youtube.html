@@ -10,47 +10,51 @@
         <link rel="stylesheet" href="styles/video.css">
         <link rel="stylesheet" href="styles/header.css">
         <link rel="stylesheet" href="styles/sidebar.css">
+        <link rel="stylesheet" href="styles/sub-header.css">
     </head>
     <body>
         <header class="header-flex">
             <div class="left-section">
-                <img class="hamburguer-menu" src="icons/hamburguer-menu.svg">
+                <div class="hamburguer-menu-container">
+                    <img class="hamburguer-menu" src="icons/header-icons/hamburguer-menu.svg">
+                </div>
                 <div class="yt-logo-container">
-                    <img class="yt-logo" src="icons/youtube-logo.svg">
+                    <img class="yt-logo" src="icons/header-icons/youtube-logo.svg">
                     <div class="country-code">BR</div>
                 </div>
 
             </div>
             <div class="middle-section">
-                <input class="bar-search" type="text" placeholder="Pesquisar">
-                
+                <div class="bar-search-container">
+                    <input class="bar-search" type="text" placeholder="Pesquisar">  
+                    <div class="keyboard-icon-container">
+                        <img src="icons/header-icons/keyboard.png">
+                    </div>
+                </div>
                 <div class="tooltip-container">
                     <button class="search-button">
-                        <img class="search-img" src="icons/search.svg">
+                        <img class="search-img" src="icons/header-icons/search.svg">
                     </button>
-                    <div class="tooltip">Search</div>
+                    <div class="tooltip">Pesquisar</div>
                 </div>
-                
                 <div class="tooltip-container">
                     <button class="voice-button">
-                        <img class="voice-img" src="icons/voice-search-icon.svg">
+                        <img class="voice-img" src="icons/header-icons/voice-search-icon.svg">
                     </button>
-                    <div class="tooltip">Search with your voice</div>
+                    <div class="tooltip">Pesquisar com sua voz</div>
                 </div>
-                
             </div>
             <div class="right-section">
                 <div class="tooltip-container">
-                    <img class="create-icon" src="icons/create.svg">
-                    <div class="tooltip">Create</div>
+                    <img class="create-icon" src="icons/header-icons/create.svg">
+                    <div class="tooltip">Criar</div>
                 </div>            
-
                 <div class="tooltip-container">
-                    <img class="notification-icon" src="icons/notifications.svg">
+                    <img class="notification-icon" src="icons/header-icons/notifications.svg">
                     <div class="notification-count">
                         3
                     </div>
-                    <div class="tooltip">Notifications</div>
+                    <div class="tooltip">Notificações</div>
                 </div>
                 <div class="tooltip-container">
                     <img class="current-user-picture" src="yt_images/my-channel.jpeg">
@@ -58,30 +62,78 @@
             </div>
         </header>
 
+        <div class="sub-header-flex">
+            <div>
+                <button class="main-sub-header-button">
+                    Tudo
+                </button>
+            </div>
+            <div>
+                <button class="sub-header-button">
+                    Jogos
+                </button>
+            </div>
+            <div>
+                <button class="sub-header-button">
+                    Música
+                </button>
+            </div>
+            <div>
+                <button class="sub-header-button">
+                    Lista de reprodução
+                </button>
+            </div>
+            <div>
+                <button class="sub-header-button">
+                    História antiga
+                </button>
+            </div>
+            <div>
+                <button class="sub-header-button">
+                    Paradox Interactive
+                </button>
+            </div>
+            <div>
+                <button class="sub-header-button">
+                    Distribuição linux
+                </button>
+            </div>
+            <div>
+                <button class="sub-header-button">
+                    Programação
+                </button>
+            </div>
+            <div>
+                <button class="sub-header-button">
+                    Computadores
+                </button>
+            </div>           
+        </div>
+
         <nav class="sidebar">
             <div class="sidebar-link">
-                <img src="icons/home.svg">
-                <div>Home</div>
+                <img src="icons/sidebar-icons/home.svg">
+                <div>Início</div>
             </div>
             <div class="sidebar-link">
-                <img src="icons/shorts.svg">
-                <div>Explore</div>
+                <img src="icons/sidebar-icons/shorts.svg">
+                <div>Shorts</div>
             </div>
             <div class="sidebar-link">
-                <img src="icons/subscriptions.svg">
-                <div>Subscriptions</div>
+                <img src="icons/sidebar-icons/subscriptions.svg">
+                <div>Inscrições</div>
             </div>
             <div class="sidebar-link">
-                <img src="icons/youtube-music.svg">
-                <div>Youtube music</div>
+                <img src="icons/sidebar-icons/youtube-music.svg">
+                <div>Youtube mu...</div>
             </div>
             <div class="sidebar-link">
-                <img src="icons/you-icon.svg">
-                <div>You</div>
+                <img src="icons/sidebar-icons/you-icon.svg">
+                <div>Você</div>
             </div>
             <div class="sidebar-link">
-                <img src="icons/download-icon.svg">
-                <div>You</div>
+                <img src="icons/sidebar-icons/download-icon.svg">
+                <div>Downloads</div>
             </div>
         </nav>
         
@@ -89,7 +141,9 @@
             <section class="video-grid">
                 <div class="video-preview">
                     <div class="thumbnail-row">
+                        <a href="https://www.youtube.com/watch?v=BQrxsyGTztM&t=2952s">
                         <img class="thumbnail" src="yt_images/hogwarts1.webp">
+                        </a>
                         <div class="video-time">
                             3:00:01
                         </div>
@@ -98,7 +152,7 @@
                         <div>
                             <div class="profile-container">
                                 <img class="profile-picture" src="yt_images/channel1.jpg">
-                                <div class="profile-info">Profile!</div>
+                            
                             </div>
                         </div>
                         <div class="video-info">

@@ -1,0 +1,30 @@
+.sub-header-flex{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(15,15,15);
+    height: 56px;
+    margin-top: -16px;
+    align-items: center;
+    justify-content: flex-start;
+    min-width: 22px;
+    gap: 10px;
+}
+.main-sub-header-button, .sub-header-button{
+    border: none;
+    background-color: rgba(110, 110, 110, 0.3);
+    color: white;
+    padding: 9px 16px;
+    border-radius: 8px;
+    font-family: Roboto, Arial;
+    font-weight: 500;
+    font-size: 14px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+.main-sub-header-button{
+    background-color: white;
+    color: rgb(15, 15, 15);
+}
+.sub-header-button:hover{
+    background-color: rgba(110, 110, 110, 0.8);
+}

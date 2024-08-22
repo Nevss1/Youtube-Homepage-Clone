@@ -20,13 +20,29 @@
     margin-top: 4px;
     margin-left: 10px;
 }
-
-.hamburguer-menu{
-    height: 24px;
+.hamburguer-menu-container{
+    height: 40px;
+    width: 40px;
     margin-right: 24px;
+    cursor: pointer;
+    background-color: rgb(15, 15, 15);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hamburguer-menu{
+    cursor: pointer;
+    height: 24px;
+    width: 24px;
+ 
+}
+.hamburguer-menu-container:hover{
+    background-color: rgb(51, 51, 51);
 }
 .yt-logo-container{
     position: relative;
+    cursor: pointer;
 }
 .yt-logo{
     height: 22px;
@@ -45,11 +61,16 @@
     flex: 1;
     display: flex;
     flex-direction: row;
-    margin-left: 50px;
+    margin-left: 150px;
     margin-right: 35px;
-    max-width: 700px;
+    max-width: 650px;
     align-items: center;
     height: 42px;
+}
+.bar-search-container{
+    max-width: inherit;
+    width: 100%;
+    position: relative;
 }
 .bar-search{
     flex: 1;
@@ -61,12 +82,20 @@
     border: 1px solid hsl(0,0%,18.82%);
     border-radius: 40px 0 0 40px;
     background-color: hsl(0,0%,7%);
+    width: 100%;
+  ;
 }
 .bar-search::placeholder{
     font-size: 16px;
     font-family: Roboto, Arial;
     color: #e4e4e4;
     letter-spacing: 0.5px;
+}
+.keyboard-icon-container{
+    position: absolute;
+    top: 12px;
+    right: 0;
+    cursor: pointer;
 }
 .tooltip-container{
     position: relative;
@@ -104,6 +133,7 @@
     box-shadow: 0 1px 0 rgba(0,0,0,.1);
     margin-left: -1px;
     cursor: pointer;
+    margin-left: 21px;
 }
 .search-img{
     width: 26px;
@@ -150,7 +180,7 @@
     color: white;
     font-family: Roboto, Arial;
     font-size: 10px;
-    top: 0px;
+    top: 5px;
     right: -6px;
     border-radius: 100px;
     padding: 2px 5px;
