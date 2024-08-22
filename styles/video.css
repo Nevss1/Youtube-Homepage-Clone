@@ -34,10 +34,10 @@
 .video-stats{
     font-size: 12px;
     color: rgb(167, 167, 167);
-    cursor: pointer;
 }
 .video-author{
     margin-bottom: 4px;
+    cursor: pointer;
 }
 .video-grid{
     display: grid;
@@ -65,4 +65,7 @@
     width: 100%;
     border-radius: 30px;
     cursor: pointer;
+}
+.video-link{
+    text-decoration: none;
 }
